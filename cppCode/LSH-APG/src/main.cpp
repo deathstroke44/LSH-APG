@@ -51,7 +51,7 @@ int main(int argc, char const* argv[])
 	}
 
 	#if defined(unix) || defined(__unix__)
-		std::string data_fold = "/home/xizhao/dataset/", index_fold = "./indexes/";
+		std::string data_fold = "/data/kabir/similarity-search/dataset/", index_fold = "";
 	#else
 		std::string data_fold = "E:/Dataset_for_c/", index_fold = data_fold + "graphIndex/";
 	#endif
@@ -65,7 +65,7 @@ int main(int argc, char const* argv[])
 	std::cout << "K=        " << K << std::endl;
 	std::cout << "T=        " << T << std::endl;
 	std::cout << "lsh_UB=   " << _lsh_UB << std::endl;
-	Preprocess prep(data_fold + datasetName + ".data", data_fold + "ANN/" + datasetName + ".bench_graph");
+	Preprocess prep(data_fold + datasetName + "/", data_fold + "ANN/" + datasetName + ".bench", k);
 
 	//return 0;
 

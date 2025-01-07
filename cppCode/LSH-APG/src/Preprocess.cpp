@@ -50,38 +50,69 @@ Preprocess::Preprocess(const std::string& path, const std::string& ben_file_, fl
 	}
 }
 
+vector<vector<float>> readFVecsFromExternal(string filepath, int maxRow=-1) {
+  FILE *infile = fopen(filepath.c_str(), "rb");
+  vector<vector<float>> data= {};
+  if (infile == NULL) {
+    std::cout << "File not found" << std::endl;
+    return data;
+  }
+  
+  int rowCt = 0;
+  int dimen;
+  while (true) {
+    if (fread(&dimen, sizeof(int), 1, infile) == 0) {
+      break;
+    }
+    std::vector<float> v(dimen);
+    if(fread(v.data(), sizeof(float), dimen, infile) == 0) {
+      std::cout << "Error when reading" << std::endl;
+    };
+    
+	data.push_back(v);
+
+    rowCt++;
+    
+    if (maxRow != -1 && rowCt >= maxRow) {
+      break;
+    }
+  }
+  // std::cout<<"Row count test: "<<rowCt<<std::endl;
+
+  if (fclose(infile)) {
+    std::cout << "Could not close data file" << std::endl;
+  }
+  return data;
+}
+
 void Preprocess::load_data(const std::string& path)
 {
-	std::string file = path + "_new";
-	std::ifstream in(file.c_str(), std::ios::binary);
-	while (!in) {
-		printf("Fail to find data file!\n");
-		exit(0);
-	}
-
-	unsigned int header[3] = {};
-	assert(sizeof header == 3 * 4);
-	in.read((char*)header, sizeof(header));
-	assert(header[0] == sizeof(float));
-	data.N = header[1];
-	data.dim = header[2];
+	vector<vector<float>> base = readFVecsFromExternal(path+"base.fvecs");
+	vector<vector<float>> query = readFVecsFromExternal(path+"query.fvecs");
+	std::string file = path;
+	
+	
+	data.N = base.size()+query.size();
+	data.numQuery=query.size();
+	data.dim = base[0].size();
 
 	data.val = new float* [data.N];
-	for (int i = 0; i < data.N; ++i) {
+	for (int i = 0; i < query.size(); ++i) {
 		data.val[i] = new float[data.dim];
 		//in.seekg(sizeof(float), std::ios::cur);
-		in.read((char*)data.val[i], sizeof(float) * header[2]);
+		for (int d=0; d<data.dim; d++) {
+			data.val[i][d]=query[i][d];
+		}
+	}
+	for (int i =  query.size(); i < data.N; ++i) {
+		data.val[i] = new float[data.dim];
+		//in.seekg(sizeof(float), std::ios::cur);
+		for (int d=0; d<data.dim; d++) {
+			data.val[i][d]=base[i-query.size()][d];
+		}
 	}
 
-	//data.val = new float* [data.N];
-	//float* dataBase = new float[data.N * data.dim];
-	//in.read((char*)dataBase, sizeof(float) * (size_t)data.N * data.dim);
-	//for (int i = 0; i < data.N; ++i) {
-	//	data.val[i] = dataBase + i * data.dim;
-	//	//in.seekg(sizeof(float), std::ios::cur);
-	//	//in.read((char*)data.val[i], sizeof(float) * header[2]);
-	//}
-	int MaxQueryNum = 200;
+	int MaxQueryNum = min(data.numQuery, (int)data.N - 1);
 	data.query = data.val;
 	data.val = &(data.query[MaxQueryNum]);
 	data.N -= MaxQueryNum;
