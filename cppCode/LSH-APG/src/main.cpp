@@ -51,7 +51,7 @@ int main(int argc, char const* argv[])
 	}
 
 	#if defined(unix) || defined(__unix__)
-		std::string data_fold = "/data/kabir/similarity-search/dataset/", index_fold = "";
+		std::string data_fold = "/users/PAS2671/kabir36/kabir/similarity-search/dataset/", index_fold = "";
 	#else
 		std::string data_fold = "E:/Dataset_for_c/", index_fold = data_fold + "graphIndex/";
 	#endif
