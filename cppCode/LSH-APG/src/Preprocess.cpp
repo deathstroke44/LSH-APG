@@ -11,6 +11,7 @@
 #include <numeric>
 #include <algorithm>
 #include <omp.h>
+using namespace std; 
 #define E 2.718281746
 #define PI 3.1415926
 
