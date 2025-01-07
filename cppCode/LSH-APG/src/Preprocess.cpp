@@ -122,7 +122,7 @@ void Preprocess::load_data(const std::string& path)
 	std::cout << "N=    " << data.N << "\n";
 	std::cout << "dim=  " << data.dim << "\n\n";
 
-	in.close();
+	// in.close();
 }
 
 struct Tuple
