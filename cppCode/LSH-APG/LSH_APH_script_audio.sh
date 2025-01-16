@@ -17,6 +17,9 @@ for pair in "${DATA[@]}"; do
   W=1.0
   for L in ${Ls[@]}; do
     for K in ${Ks[@]}; do
-        for T in ${Ts[@]}; do
-            ./lgo ${data} ${k} ${L} ${K} ${beta} ${W} ${T} 
-done
+      for T in ${Ts[@]}; do
+        ./lgo ${data} ${k} ${L} ${K} ${beta} ${W} ${T} 
+      done
+    done
+  done
+    
