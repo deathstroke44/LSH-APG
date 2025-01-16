@@ -158,21 +158,21 @@ int main(int argc, char const* argv[])
 		// std::cout << std::endl;
 	}
 	else {
-		std::vector<int> ks = { 1,10,20,30,40,50,60,70,80,90,100 };
+		// std::vector<int> ks = { 1,10,20,30,40,50,60,70,80,90,100 };
 
-		for (auto& kk : ks) {
-			k = kk;
+		// for (auto& kk : ks) {
+		// 	k = kk;
 
-			if (divG) divG->ef = k + 150;
-			graphSearch(c, k, divG, prep, beta, datasetName, data_fold, 2);
+		// 	if (divG) divG->ef = k + 150;
+		// 	graphSearch(c, k, divG, prep, beta, datasetName, data_fold, 2);
 
-			//for (auto& ef : efs) {
-			//	if (ef < k) continue;
-			//	if (divG) divG->ef = ef;
-			//	graphSearch(c, kk, divG, prep, beta, datasetName, data_fold, 2);
-			//}
-			std::cout << std::endl;
-		}
+		// 	//for (auto& ef : efs) {
+		// 	//	if (ef < k) continue;
+		// 	//	if (divG) divG->ef = ef;
+		// 	//	graphSearch(c, kk, divG, prep, beta, datasetName, data_fold, 2);
+		// 	//}
+		// 	std::cout << std::endl;
+		// }
 	}
 	
 
