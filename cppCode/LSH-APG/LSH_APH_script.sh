@@ -1,6 +1,7 @@
-
-
-DATA=(audio:20)
+#!/bin/bash
+#SBATCH -t 20:00:00
+#SBATCH -A PAS2671
+DATA=(dataset-type)
 for pair in "${DATA[@]}"; do
   data="${pair%%:*}"
   k="${pair#*:}"
@@ -12,9 +13,8 @@ for pair in "${DATA[@]}"; do
   for L in ${Ls[@]}; do
     for K in ${Ks[@]}; do
       for T in ${Ts[@]}; do
-        ./lgo ${data} ${k} ${L} ${K} ${beta} ${W} ${T} 
+        /usr/bin/time -v ./lgo ${data} ${k} ${L} ${K} ${beta} ${W} ${T} &> logs/${data}-${L}-${K}-${T}-${beta}-${W}.log
       done
     done
   done
 done
-    
