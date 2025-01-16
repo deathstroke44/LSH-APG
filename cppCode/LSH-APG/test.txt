@@ -1,0 +1,720 @@
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        1
+K=        6
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.648531s.
+
+LOADING BENMARK...
+LOADING TIME: 0.005042s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 6.5e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.015214s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    1068.97
+Increase  3563.23times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 4.39312s.
+
+SAVING GRAPH...
+SAVING TIME: 0.058308s.
+
+dist=61282.855469, cnt=17.996946, unique=1, std=4.778521, Recall=0.648957
+cc=486.785858, pruning=0.193059
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 1, K = 6, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.42796       0.985     1143.71      52.365     1196.07     0.22914
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:1
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        1
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.114159s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000692s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 3.5e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.011516s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    1068.97
+Increase  3563.23times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 7.96232s.
+
+SAVING GRAPH...
+SAVING TIME: 0.079556s.
+
+dist=64227.500000, cnt=36.150429, unique=1, std=9.416738, Recall=0.647703
+cc=710.428711, pruning=0.262238
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 1, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.50351       0.991     1519.57     76.2963     1595.87     0.32448
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:9
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        1
+K=        12
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.11941s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000645s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000186s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.042828s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    36238.4
+Increase  120795times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 4.80605s.
+
+SAVING GRAPH...
+SAVING TIME: 0.057455s.
+
+dist=61945.203125, cnt=18.000412, unique=1, std=4.778565, Recall=0.618226
+cc=455.344025, pruning=0.267326
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 1, K = 12, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200      0.3877       0.988     1072.12     108.444     1180.56    0.305218
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:14
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        1
+K=        12
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.109923s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000676s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000107s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.028574s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    36238.4
+Increase  120795times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 10.1973s.
+
+SAVING GRAPH...
+SAVING TIME: 0.080413s.
+
+dist=63892.812500, cnt=36.152473, unique=1, std=9.414423, Recall=0.649544
+cc=645.804688, pruning=0.380439
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 1, K = 12, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.53208       0.994     1388.21     168.281     1556.49    0.444825
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:25
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        1
+K=        18
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.088645s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000662s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000152s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.038889s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    160484
+Increase  534948times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 5.24174s.
+
+SAVING GRAPH...
+SAVING TIME: 0.05237s.
+
+dist=61285.570312, cnt=18.013636, unique=1, std=4.772145, Recall=0.659210
+cc=443.375793, pruning=0.299684
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 1, K = 18, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.35603      0.9855      1072.6     162.801      1235.4    0.305557
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:30
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        1
+K=        18
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.090598s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000586s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000107s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.026978s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    160484
+Increase  534948times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 10.6057s.
+
+SAVING GRAPH...
+SAVING TIME: 0.090608s.
+
+dist=64222.679688, cnt=36.166763, unique=1, std=9.403993, Recall=0.647115
+cc=619.096558, pruning=0.440680
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 1, K = 18, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.60725      0.9955     1367.04      257.54     1624.58    0.464975
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:41
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        6
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.113681s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000616s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000173s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.041141s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    1098.13
+Increase  3660.45times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 4.22811s.
+
+SAVING GRAPH...
+SAVING TIME: 0.136181s.
+
+dist=61586.957031, cnt=18.009665, unique=1, std=4.770074, Recall=0.619793
+cc=488.764679, pruning=0.191868
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 6, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.42209      0.9845     1173.68     59.2687     1232.95    0.224064
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:46
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.09552s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000578s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 8e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.020095s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    1098.13
+Increase  3660.45times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 7.60194s.
+
+SAVING GRAPH...
+SAVING TIME: 0.095006s.
+
+dist=63934.789062, cnt=36.162868, unique=1, std=9.406146, Recall=0.661188
+cc=711.757019, pruning=0.261487
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200      0.5482       0.992     1548.47     82.8243     1631.29    0.316764
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:54
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        12
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.072636s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000549s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000243s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.057169s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    36238.4
+Increase  120795times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 4.62942s.
+
+SAVING GRAPH...
+SAVING TIME: 0.096434s.
+
+dist=60661.910156, cnt=18.018394, unique=1, std=4.779050, Recall=0.671355
+cc=457.168304, pruning=0.266045
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 12, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.40425       0.989     1104.34     121.799     1226.14    0.294257
+
+
+******************************************************************************************************
+                                                                                    1180-2:40:59
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        12
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.096309s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000656s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000132s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.037609s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    36238.4
+Increase  120795times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 9.15559s.
+
+SAVING GRAPH...
+SAVING TIME: 0.073319s.
+
+dist=63960.996094, cnt=36.134171, unique=1, std=9.399834, Recall=0.678138
+cc=646.397034, pruning=0.379902
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 12, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.55564       0.994     1409.96     179.444      1589.4     0.43309
+
+
+******************************************************************************************************
+                                                                                    1180-2:41:8
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        18
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.06481s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000531s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000434s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.100486s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    160484
+Increase  534948times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 4.99479s.
+
+SAVING GRAPH...
+SAVING TIME: 0.139908s.
+
+dist=60759.925781, cnt=18.012026, unique=1, std=4.770927, Recall=0.652500
+cc=444.721985, pruning=0.299164
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 18, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.53238       0.992     1099.33     183.138     1282.47    0.299555
+
+
+******************************************************************************************************
+                                                                                    1180-2:41:14
+*****************************************************************************************************
+
+
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        18
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.103441s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000719s.
+
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000215s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.05782s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    160484
+Increase  534948times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 10.1219s.
+
+SAVING GRAPH...
+SAVING TIME: 0.087938s.
+
+dist=64304.531250, cnt=36.168335, unique=1, std=9.404608, Recall=0.660917
+cc=618.262451, pruning=0.439453
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 18, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.44528      0.9945     1396.31     276.491      1672.8     0.45568
+
+
+******************************************************************************************************
+                                                                                    1180-2:41:24
+*****************************************************************************************************
+
+

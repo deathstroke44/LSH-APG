@@ -1,10 +1,4 @@
-pairs=(key1:value1 key2:value2 key3:value3)
 
-for pair in "${pairs[@]}"; do
-  key="${pair%%:*}"
-  value="${pair#*:}"
-  echo "Key: $key, Value: $value"
-done
 
 DATA=(audio:20)
 for pair in "${DATA[@]}"; do
@@ -22,4 +16,5 @@ for pair in "${DATA[@]}"; do
       done
     done
   done
+done
     
