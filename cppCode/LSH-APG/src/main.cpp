@@ -33,15 +33,17 @@ int main(int argc, char const* argv[])
 	bool isbuilt = 0;
 	_lsh_UB=0;
 	if (argc > 1) datasetName = argv[1];
-	if (argc > 2) isbuilt = std::atoi(argv[2]);
-	if (argc > 3) k = std::atoi(argv[3]);
-	if (argc > 4) L = std::atoi(argv[4]);
-	if (argc > 5) K = std::atoi(argv[5]);
-	if (argc > 6) T = std::atoi(argv[6]);
-	if (argc > 7) efC = std::atoi(argv[7]);
-	if (argc > 8) pC = std::atof(argv[8]);
-	if (argc > 9) pQ = std::atof(argv[9]);
-	if (argc > 10) _lsh_UB = std::atoi(argv[10]);
+	// if (argc > 2) isbuilt = std::atoi(argv[2]);
+	if (argc > 2) k = std::atoi(argv[2]);
+	if (argc > 3) L = std::atoi(argv[3]);
+	if (argc > 4) K = std::atoi(argv[4]);
+	if (argc > 5) beta = std::atof(argv[5]);
+	if (argc > 6) W = std::atof(argv[6]);
+	if (argc > 7) T = std::atoi(argv[7]);
+	if (argc > 8) efC = std::atoi(argv[8]);
+	if (argc > 9) pC = std::atof(argv[9]);
+	if (argc > 10) pQ = std::atof(argv[10]);
+	if (argc > 11) _lsh_UB = std::atoi(argv[11]);
 	if (argc == 1) {
 		const std::string datas[] = { "audio","mnist","cifar","NUS","Trevi","gist","deep1m","skew_10M_8d","gauss_8d","gauss_25w_128" };
 		datasetName = datas[0];
