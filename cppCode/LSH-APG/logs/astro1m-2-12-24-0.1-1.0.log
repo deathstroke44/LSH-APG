@@ -1,0 +1,80 @@
+C++17!
+Using LSH-Graph for astro1m ...
+c=        1.5
+k=        100
+L=        2
+K=        12
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/astro1m/
+N=    1000000
+dim=  256
+
+LOADING TIME: 1.56759s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000603s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000137s.
+
+COMPUTING HASH...
+COMPUTING TIME: 1.02062s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    5.46814
+Increase  18.2271times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 1488.72s.
+
+SAVING GRAPH...
+SAVING TIME: 1.37081s.
+
+dist=18.462070, cnt=33.618259, unique=1, std=9.538030, Recall=0.000000
+cc=1485.994385, pruning=0.101150
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for astro1m is as follow: k=100, probQ = 0.9, L = 2, K = 12, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200      3.0468      0.5582      2723.7     172.071     2895.77    0.137757
+
+Command terminated by signal 11
+	Command being timed: "./lgo astro1m 100 2 12 0.1 1.0 24"
+	User time (seconds): 1476.54
+	System time (seconds): 15.17
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 24:57.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2383500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 7507620
+	Voluntary context switches: 930643
+	Involuntary context switches: 311854
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 3524832
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

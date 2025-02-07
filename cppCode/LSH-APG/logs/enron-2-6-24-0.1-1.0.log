@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for enron ...
+c=        1.5
+k=        20
+L=        2
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/enron/
+N=    94987
+dim=  1369
+
+LOADING TIME: 0.732649s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000465s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000344s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.237415s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    754.657
+Increase  2515.52times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 147.361s.
+
+SAVING GRAPH...
+SAVING TIME: 0.114864s.
+
+dist=100.083389, cnt=34.609612, unique=1, std=9.525189, Recall=0.574594
+cc=999.301147, pruning=0.147025
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for enron is as follow: k=20, probQ = 0.9, L = 2, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     2.32087      0.9755     2243.19     24.4207     2267.61    0.208467
+
+
+******************************************************************************************************
+                                                                                    1180-4:17:26
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo enron 20 2 6 0.1 1.0 24"
+	User time (seconds): 146.79
+	System time (seconds): 1.58
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:28.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1051848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 696335
+	Voluntary context switches: 77208
+	Involuntary context switches: 30771
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 68160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

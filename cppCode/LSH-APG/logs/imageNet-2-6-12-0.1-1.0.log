@@ -1,0 +1,82 @@
+C++17!
+Using LSH-Graph for imageNet ...
+c=        1.5
+k=        20
+L=        2
+K=        6
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/imageNet/
+N=    2340373
+dim=  150
+
+LOADING TIME: 11.7713s.
+
+LOADING BENMARK...
+LOADING TIME: 0.003709s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 4.8e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.861791s.
+
+[31mOld W=    0.3
+New W=    0.3
+Increase  1times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 1457.4s.
+
+SAVING GRAPH...
+SAVING TIME: 1.96176s.
+
+dist=0.198914, cnt=16.279968, unique=1, std=4.728901, Recall=0.411632
+cc=935.953125, pruning=0.135881
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for imageNet is as follow: k=20, probQ = 0.9, L = 2, K = 6, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.93589      0.8315     2276.09     123.084     2399.17    0.180406
+
+
+******************************************************************************************************
+                                                                                    1180-7:35:11
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo imageNet 20 2 6 0.1 1.0 12"
+	User time (seconds): 1443.24
+	System time (seconds): 19.43
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 24:34.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4590808
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 15170419
+	Voluntary context switches: 1658042
+	Involuntary context switches: 338345
+	Swaps: 0
+	File system inputs: 2763720
+	File system outputs: 1002656
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

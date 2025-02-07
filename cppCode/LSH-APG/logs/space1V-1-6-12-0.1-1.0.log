@@ -1,0 +1,87 @@
+C++17!
+Using LSH-Graph for space1V ...
+c=        1.5
+k=        100
+L=        1
+K=        6
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/space1V/
+N=    1000000
+dim=  100
+
+LOADING TIME: 8.40684s.
+
+MAKING BENMARK...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+MAKING TIME: 60.3012s.
+
+SAVING BENMARK...
+SAVING TIME: 0.003091s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 2.5e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.210674s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    12.0793
+Increase  40.2644times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 700.681s.
+
+SAVING GRAPH...
+SAVING TIME: 0.629764s.
+
+dist=1125.520020, cnt=17.288092, unique=1, std=4.783235, Recall=0.000000
+cc=1234.899292, pruning=0.095577
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for space1V is as follow: k=100, probQ = 0.9, L = 1, K = 6, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     1.04837      0.4854     2650.09      199.04     2849.13    0.176307
+
+Command terminated by signal 11
+	Command being timed: "./lgo space1V 100 1 6 0.1 1.0 12"
+	User time (seconds): 757.48
+	System time (seconds): 5.78
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:54.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2295304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2296273
+	Voluntary context switches: 413144
+	Involuntary context switches: 177911
+	Swaps: 0
+	File system inputs: 789144
+	File system outputs: 4168936
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

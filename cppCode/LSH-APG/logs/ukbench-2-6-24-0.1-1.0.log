@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for ukbench ...
+c=        1.5
+k=        20
+L=        2
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/ukbench/
+N=    1097907
+dim=  128
+
+LOADING TIME: 0.904803s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000488s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 4.5e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.285022s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    1.97733
+Increase  6.5911times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 937.139s.
+
+SAVING GRAPH...
+SAVING TIME: 1.30674s.
+
+dist=122.014046, cnt=36.898346, unique=1, std=9.259536, Recall=0.632428
+cc=1112.089355, pruning=0.249941
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for ukbench is as follow: k=20, probQ = 0.9, L = 2, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     1.47261        0.98     2445.46     191.351     2636.81    0.360856
+
+
+******************************************************************************************************
+                                                                                    1180-5:40:32
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo ukbench 20 2 6 0.1 1.0 24"
+	User time (seconds): 930.85
+	System time (seconds): 7.22
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:40.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1988356
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3892864
+	Voluntary context switches: 762413
+	Involuntary context switches: 213015
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 824288
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

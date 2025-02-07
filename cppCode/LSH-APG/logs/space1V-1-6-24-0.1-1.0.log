@@ -1,0 +1,382 @@
+C++17!
+Using LSH-Graph for space1V ...
+c=        1.5
+k=        100
+L=        1
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/space1V/
+N=    1000000
+dim=  100
+
+LOADING TIME: 0.671287s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000469s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 2.2e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.175023s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    12.0793
+Increase  40.2644times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 1279.32s.
+
+SAVING GRAPH...
+SAVING TIME: 0.85887s.
+
+dist=1146.735840, cnt=35.559464, unique=1, std=9.370918, Recall=0.000273
+cc=2236.599121, pruning=0.121955
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for space1V is as follow: k=100, probQ = 0.9, L = 1, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     2.17988      0.6302      4714.1     371.833     5085.93    0.226845
+
+*** Error in `./lgo': free(): invalid pointer: 0x0000000018cc4741 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x2baa2a9f7329]
+./lgo[0x40bb5e]
+./lgo[0x408415]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2baa2a998555]
+./lgo[0x408e0c]
+======= Memory map: ========
+00400000-00449000 r-xp 00000000 00:38 1794793                            /users/PAS2671/kabir36/kabir/similarity-search/models/LSH-APG/cppCode/LSH-APG/lgo
+00648000-0064a000 r--p 00048000 00:38 1794793                            /users/PAS2671/kabir36/kabir/similarity-search/models/LSH-APG/cppCode/LSH-APG/lgo
+0064a000-0064b000 rw-p 0004a000 00:38 1794793                            /users/PAS2671/kabir36/kabir/similarity-search/models/LSH-APG/cppCode/LSH-APG/lgo
+00abd000-33b60000 rw-p 00000000 00:00 0                                  [heap]
+2baa29628000-2baa2964a000 r-xp 00000000 00:24 3428292698                 /usr/lib64/ld-2.17.so
+2baa2964a000-2baa29651000 rw-p 00000000 00:00 0 
+2baa29697000-2baa2969e000 rw-p 00000000 00:00 0 
+2baa29849000-2baa2984a000 r--p 00021000 00:24 3428292698                 /usr/lib64/ld-2.17.so
+2baa2984a000-2baa2984b000 rw-p 00022000 00:24 3428292698                 /usr/lib64/ld-2.17.so
+2baa2984b000-2baa2984c000 rw-p 00000000 00:00 0 
+2baa2984c000-2baa29884000 r-xp 00000000 00:2c 19202863                   /apps/xalt/2.10.29/lib64/libxalt_init.so
+2baa29884000-2baa29a84000 ---p 00038000 00:2c 19202863                   /apps/xalt/2.10.29/lib64/libxalt_init.so
+2baa29a84000-2baa29a85000 r--p 00038000 00:2c 19202863                   /apps/xalt/2.10.29/lib64/libxalt_init.so
+2baa29a85000-2baa29a86000 rw-p 00039000 00:2c 19202863                   /apps/xalt/2.10.29/lib64/libxalt_init.so
+2baa29a86000-2baa29a87000 rw-p 00000000 00:00 0 
+2baa29a87000-2baa29a8e000 r-xp 00000000 00:24 3428781212                 /usr/lib64/librt-2.17.so
+2baa29a8e000-2baa29c8d000 ---p 00007000 00:24 3428781212                 /usr/lib64/librt-2.17.so
+2baa29c8d000-2baa29c8e000 r--p 00006000 00:24 3428781212                 /usr/lib64/librt-2.17.so
+2baa29c8e000-2baa29c8f000 rw-p 00007000 00:24 3428781212                 /usr/lib64/librt-2.17.so
+2baa29c8f000-2baa29e03000 r-xp 00000000 00:2c 7905980                    /apps/gnu/8.4.0/lib64/libstdc++.so.6.0.25
+2baa29e03000-2baa2a002000 ---p 00174000 00:2c 7905980                    /apps/gnu/8.4.0/lib64/libstdc++.so.6.0.25
+2baa2a002000-2baa2a00c000 r--p 00173000 00:2c 7905980                    /apps/gnu/8.4.0/lib64/libstdc++.so.6.0.25
+2baa2a00c000-2baa2a00e000 rw-p 0017d000 00:2c 7905980                    /apps/gnu/8.4.0/lib64/libstdc++.so.6.0.25
+2baa2a00e000-2baa2a012000 rw-p 00000000 00:00 0 
+2baa2a012000-2baa2a113000 r-xp 00000000 00:24 3428781161                 /usr/lib64/libm-2.17.so
+2baa2a113000-2baa2a312000 ---p 00101000 00:24 3428781161                 /usr/lib64/libm-2.17.so
+2baa2a312000-2baa2a313000 r--p 00100000 00:24 3428781161                 /usr/lib64/libm-2.17.so
+2baa2a313000-2baa2a314000 rw-p 00101000 00:24 3428781161                 /usr/lib64/libm-2.17.so
+2baa2a314000-2baa2a341000 r-xp 00000000 00:2c 5669150                    /apps/gnu/8.4.0/lib64/libgomp.so.1.0.0
+2baa2a341000-2baa2a540000 ---p 0002d000 00:2c 5669150                    /apps/gnu/8.4.0/lib64/libgomp.so.1.0.0
+2baa2a540000-2baa2a541000 r--p 0002c000 00:2c 5669150                    /apps/gnu/8.4.0/lib64/libgomp.so.1.0.0
+2baa2a541000-2baa2a542000 rw-p 0002d000 00:2c 5669150                    /apps/gnu/8.4.0/lib64/libgomp.so.1.0.0
+2baa2a542000-2baa2a559000 r-xp 00000000 00:2c 5669148                    /apps/gnu/8.4.0/lib64/libgcc_s.so.1
+2baa2a559000-2baa2a758000 ---p 00017000 00:2c 5669148                    /apps/gnu/8.4.0/lib64/libgcc_s.so.1
+2baa2a758000-2baa2a759000 r--p 00016000 00:2c 5669148                    /apps/gnu/8.4.0/lib64/libgcc_s.so.1
+2baa2a759000-2baa2a75a000 rw-p 00017000 00:2c 5669148                    /apps/gnu/8.4.0/lib64/libgcc_s.so.1
+2baa2a75a000-2baa2a771000 r-xp 00000000 00:24 3428781193                 /usr/lib64/libpthread-2.17.so
+2baa2a771000-2baa2a970000 ---p 00017000 00:24 3428781193                 /usr/lib64/libpthread-2.17.so
+2baa2a970000-2baa2a971000 r--p 00016000 00:24 3428781193                 /usr/lib64/libpthread-2.17.so
+2baa2a971000-2baa2a972000 rw-p 00017000 00:24 3428781193                 /usr/lib64/libpthread-2.17.so
+2baa2a972000-2baa2a976000 rw-p 00000000 00:00 0 
+2baa2a976000-2baa2ab3a000 r-xp 00000000 00:24 3428781146                 /usr/lib64/libc-2.17.so
+2baa2ab3a000-2baa2ad39000 ---p 001c4000 00:24 3428781146                 /usr/lib64/libc-2.17.so
+2baa2ad39000-2baa2ad3d000 r--p 001c3000 00:24 3428781146                 /usr/lib64/libc-2.17.so
+2baa2ad3d000-2baa2ad3f000 rw-p 001c7000 00:24 3428781146                 /usr/lib64/libc-2.17.so
+2baa2ad3f000-2baa2ad44000 rw-p 00000000 00:00 0 
+2baa2ad44000-2baa2ad46000 r-xp 00000000 00:24 3428781159                 /usr/lib64/libdl-2.17.so
+2baa2ad46000-2baa2af46000 ---p 00002000 00:24 3428781159                 /usr/lib64/libdl-2.17.so
+2baa2af46000-2baa2af47000 r--p 00002000 00:24 3428781159                 /usr/lib64/libdl-2.17.so
+2baa2af47000-2baa2af48000 rw-p 00003000 00:24 3428781159                 /usr/lib64/libdl-2.17.so
+2baa2af48000-2baa2af4c000 r-xp 00000000 00:2c 21954920                   /apps/xalt/2.10.29/lib64/libuuid.so.1.3.0
+2baa2af4c000-2baa2b14b000 ---p 00004000 00:2c 21954920                   /apps/xalt/2.10.29/lib64/libuuid.so.1.3.0
+2baa2b14b000-2baa2b14c000 r--p 00003000 00:2c 21954920                   /apps/xalt/2.10.29/lib64/libuuid.so.1.3.0
+2baa2b14c000-2baa2b14d000 rw-p 00004000 00:2c 21954920                   /apps/xalt/2.10.29/lib64/libuuid.so.1.3.0
+2baa2b14d000-2baa513a8000 rw-p 00000000 00:00 0 
+2baa5adf5000-2baa5adf6000 ---p 00000000 00:00 0 
+2baa5adf6000-2baa5aff6000 rw-p 00000000 00:00 0 
+2baa5aff6000-2baa5aff7000 ---p 00000000 00:00 0 
+2baa5aff7000-2baa5b1f7000 rw-p 00000000 00:00 0 
+2baa5b1f7000-2baa5b1f8000 ---p 00000000 00:00 0 
+2baa5b1f8000-2baa5b3f8000 rw-p 00000000 00:00 0 
+2baa5b3f8000-2baa5b3f9000 ---p 00000000 00:00 0 
+2baa5b3f9000-2baa5b5f9000 rw-p 00000000 00:00 0 
+2baa5b5f9000-2baa5b5fa000 ---p 00000000 00:00 0 
+2baa5b5fa000-2baa5b7fa000 rw-p 00000000 00:00 0 
+2baa5b7fa000-2baa5b7fb000 ---p 00000000 00:00 0 
+2baa5b7fb000-2baa5b9fb000 rw-p 00000000 00:00 0 
+2baa5b9fb000-2baa5b9fc000 ---p 00000000 00:00 0 
+2baa5b9fc000-2baa5bbfc000 rw-p 00000000 00:00 0 
+2baa5bbfc000-2baa5bbfd000 ---p 00000000 00:00 0 
+2baa5bbfd000-2baa5bdfd000 rw-p 00000000 00:00 0 
+2baa5bdfd000-2baa5bdfe000 ---p 00000000 00:00 0 
+2baa5bdfe000-2baa5bffe000 rw-p 00000000 00:00 0 
+2baa5bffe000-2baa5bfff000 ---p 00000000 00:00 0 
+2baa5bfff000-2baa5c1ff000 rw-p 00000000 00:00 0 
+2baa5c1ff000-2baa5c200000 ---p 00000000 00:00 0 
+2baa5c200000-2baa5c400000 rw-p 00000000 00:00 0 
+2baa5c400000-2baa5c401000 ---p 00000000 00:00 0 
+2baa5c401000-2baa5c601000 rw-p 00000000 00:00 0 
+2baa5c601000-2baa5c602000 ---p 00000000 00:00 0 
+2baa5c602000-2baa5c802000 rw-p 00000000 00:00 0 
+2baa5c802000-2baa5c803000 ---p 00000000 00:00 0 
+2baa5c803000-2baa5ca03000 rw-p 00000000 00:00 0 
+2baa5ca03000-2baa5ca04000 ---p 00000000 00:00 0 
+2baa5ca04000-2baa5cc04000 rw-p 00000000 00:00 0 
+2baa5cc04000-2baa5cc05000 ---p 00000000 00:00 0 
+2baa5cc05000-2baa5ce05000 rw-p 00000000 00:00 0 
+2baa5ce05000-2baa5ce06000 ---p 00000000 00:00 0 
+2baa5ce06000-2baa5d006000 rw-p 00000000 00:00 0 
+2baa5d006000-2baa5d007000 ---p 00000000 00:00 0 
+2baa5d007000-2baa5d207000 rw-p 00000000 00:00 0 
+2baa5d207000-2baa5d208000 ---p 00000000 00:00 0 
+2baa5d208000-2baa5d408000 rw-p 00000000 00:00 0 
+2baa60000000-2baa600f8000 rw-p 00000000 00:00 0 
+2baa600f8000-2baa64000000 ---p 00000000 00:00 0 
+2baa64000000-2baa640f4000 rw-p 00000000 00:00 0 
+2baa640f4000-2baa68000000 ---p 00000000 00:00 0 
+2baa68000000-2baa680fa000 rw-p 00000000 00:00 0 
+2baa680fa000-2baa6c000000 ---p 00000000 00:00 0 
+2baa6c000000-2baa6c0ed000 rw-p 00000000 00:00 0 
+2baa6c0ed000-2baa70000000 ---p 00000000 00:00 0 
+2baa70000000-2baa700e9000 rw-p 00000000 00:00 0 
+2baa700e9000-2baa74000000 ---p 00000000 00:00 0 
+2baa74000000-2baa740fb000 rw-p 00000000 00:00 0 
+2baa740fb000-2baa78000000 ---p 00000000 00:00 0 
+2baa78000000-2baa780f9000 rw-p 00000000 00:00 0 
+2baa780f9000-2baa7c000000 ---p 00000000 00:00 0 
+2baa7c000000-2baa7c0f1000 rw-p 00000000 00:00 0 
+2baa7c0f1000-2baa80000000 ---p 00000000 00:00 0 
+2baa80000000-2baa800f6000 rw-p 00000000 00:00 0 
+2baa800f6000-2baa84000000 ---p 00000000 00:00 0 
+2baa84000000-2baa840e8000 rw-p 00000000 00:00 0 
+2baa840e8000-2baa88000000 ---p 00000000 00:00 0 
+2baa88000000-2baa880fa000 rw-p 00000000 00:00 0 
+2baa880fa000-2baa8c000000 ---p 00000000 00:00 0 
+2baa8c000000-2baa8c0f7000 rw-p 00000000 00:00 0 
+2baa8c0f7000-2baa90000000 ---p 00000000 00:00 0 
+2baa90000000-2baa900f2000 rw-p 00000000 00:00 0 
+2baa900f2000-2baa94000000 ---p 00000000 00:00 0 
+2baa94000000-2baa940ed000 rw-p 00000000 00:00 0 
+2baa940ed000-2baa98000000 ---p 00000000 00:00 0 
+2baa98000000-2baa980fa000 rw-p 00000000 00:00 0 
+2baa980fa000-2baa9c000000 ---p 00000000 00:00 0 
+2baa9c000000-2baa9c0ef000 rw-p 00000000 00:00 0 
+2baa9c0ef000-2baaa0000000 ---p 00000000 00:00 0 
+2baaa0000000-2baaa00fb000 rw-p 00000000 00:00 0 
+2baaa00fb000-2baaa4000000 ---p 00000000 00:00 0 
+2baaa4000000-2baaa40f2000 rw-p 00000000 00:00 0 
+2baaa40f2000-2baaa8000000 ---p 00000000 00:00 0 
+2baaa8000000-2baaa80df000 rw-p 00000000 00:00 0 
+2baaa80df000-2baaac000000 ---p 00000000 00:00 0 
+2baaac000000-2baaac0fa000 rw-p 00000000 00:00 0 
+2baaac0fa000-2baab0000000 ---p 00000000 00:00 0 
+2baab0000000-2baab00ed000 rw-p 00000000 00:00 0 
+2baab00ed000-2baab4000000 ---p 00000000 00:00 0 
+2baab4000000-2baab40f7000 rw-p 00000000 00:00 0 
+2baab40f7000-2baab8000000 ---p 00000000 00:00 0 
+2baab8000000-2baab80f2000 rw-p 00000000 00:00 0 
+2baab80f2000-2baabc000000 ---p 00000000 00:00 0 
+2baabc000000-2baabc0f7000 rw-p 00000000 00:00 0 
+2baabc0f7000-2baac0000000 ---p 00000000 00:00 0 
+2baac0000000-2baac00f9000 rw-p 00000000 00:00 0 
+2baac00f9000-2baac4000000 ---p 00000000 00:00 0 
+2baac4000000-2baac40f8000 rw-p 00000000 00:00 0 
+2baac40f8000-2baac8000000 ---p 00000000 00:00 0 
+2baac8000000-2baac80e4000 rw-p 00000000 00:00 0 
+2baac80e4000-2baacc000000 ---p 00000000 00:00 0 
+2baacc000000-2baacc0ee000 rw-p 00000000 00:00 0 
+2baacc0ee000-2baad0000000 ---p 00000000 00:00 0 
+2baad0000000-2baad00f7000 rw-p 00000000 00:00 0 
+2baad00f7000-2baad4000000 ---p 00000000 00:00 0 
+2baad4000000-2baad40fa000 rw-p 00000000 00:00 0 
+2baad40fa000-2baad8000000 ---p 00000000 00:00 0 
+2baad8000000-2baad80fb000 rw-p 00000000 00:00 0 
+2baad80fb000-2baadc000000 ---p 00000000 00:00 0 
+2baadc000000-2baadc0f7000 rw-p 00000000 00:00 0 
+2baadc0f7000-2baae0000000 ---p 00000000 00:00 0 
+2baae0000000-2baae00fc000 rw-p 00000000 00:00 0 
+2baae00fc000-2baae4000000 ---p 00000000 00:00 0 
+2baae4000000-2baae40f9000 rw-p 00000000 00:00 0 
+2baae40f9000-2baae8000000 ---p 00000000 00:00 0 
+2baae8000000-2baae80fb000 rw-p 00000000 00:00 0 
+2baae80fb000-2baaec000000 ---p 00000000 00:00 0 
+2baaec000000-2baaec0f8000 rw-p 00000000 00:00 0 
+2baaec0f8000-2baaf0000000 ---p 00000000 00:00 0 
+2baaf0000000-2baaf00f3000 rw-p 00000000 00:00 0 
+2baaf00f3000-2baaf4000000 ---p 00000000 00:00 0 
+2baaf4000000-2baaf40f3000 rw-p 00000000 00:00 0 
+2baaf40f3000-2baaf8000000 ---p 00000000 00:00 0 
+2baaf8000000-2baaf80e8000 rw-p 00000000 00:00 0 
+2baaf80e8000-2baafc000000 ---p 00000000 00:00 0 
+2baafc000000-2baafc101000 rw-p 00000000 00:00 0 
+2baafc101000-2bab00000000 ---p 00000000 00:00 0 
+2bab00000000-2bab000f4000 rw-p 00000000 00:00 0 
+2bab000f4000-2bab04000000 ---p 00000000 00:00 0 
+2bab04000000-2bab040fa000 rw-p 00000000 00:00 0 
+2bab040fa000-2bab08000000 ---p 00000000 00:00 0 
+2bab08000000-2bab080fc000 rw-p 00000000 00:00 0 
+2bab080fc000-2bab0c000000 ---p 00000000 00:00 0 
+2bab0c000000-2bab0c0f9000 rw-p 00000000 00:00 0 
+2bab0c0f9000-2bab10000000 ---p 00000000 00:00 0 
+2bab10000000-2bab100f7000 rw-p 00000000 00:00 0 
+2bab100f7000-2bab14000000 ---p 00000000 00:00 0 
+2bab14000000-2bab140f5000 rw-p 00000000 00:00 0 
+2bab140f5000-2bab18000000 ---p 00000000 00:00 0 
+2bab18000000-2bab180f3000 rw-p 00000000 00:00 0 
+2bab180f3000-2bab1c000000 ---p 00000000 00:00 0 
+2bab1c000000-2bab1c0ec000 rw-p 00000000 00:00 0 
+2bab1c0ec000-2bab20000000 ---p 00000000 00:00 0 
+2bab20000000-2bab200f6000 rw-p 00000000 00:00 0 
+2bab200f6000-2bab24000000 ---p 00000000 00:00 0 
+2bab24000000-2bab240e9000 rw-p 00000000 00:00 0 
+2bab240e9000-2bab28000000 ---p 00000000 00:00 0 
+2bab28000000-2bab280f7000 rw-p 00000000 00:00 0 
+2bab280f7000-2bab2c000000 ---p 00000000 00:00 0 
+2bab2c000000-2bab2c0eb000 rw-p 00000000 00:00 0 
+2bab2c0eb000-2bab30000000 ---p 00000000 00:00 0 
+2bab30000000-2bab300f4000 rw-p 00000000 00:00 0 
+2bab300f4000-2bab34000000 ---p 00000000 00:00 0 
+2bab34000000-2bab340e8000 rw-p 00000000 00:00 0 
+2bab340e8000-2bab38000000 ---p 00000000 00:00 0 
+2bab38000000-2bab380f5000 rw-p 00000000 00:00 0 
+2bab380f5000-2bab3c000000 ---p 00000000 00:00 0 
+2bab3c000000-2bab3c100000 rw-p 00000000 00:00 0 
+2bab3c100000-2bab40000000 ---p 00000000 00:00 0 
+2bab40000000-2bab400f9000 rw-p 00000000 00:00 0 
+2bab400f9000-2bab44000000 ---p 00000000 00:00 0 
+2bab44000000-2bab440f3000 rw-p 00000000 00:00 0 
+2bab440f3000-2bab48000000 ---p 00000000 00:00 0 
+2bab48000000-2bab480fd000 rw-p 00000000 00:00 0 
+2bab480fd000-2bab4c000000 ---p 00000000 00:00 0 
+2bab4c000000-2bab4c0e9000 rw-p 00000000 00:00 0 
+2bab4c0e9000-2bab50000000 ---p 00000000 00:00 0 
+2bab50000000-2bab500fa000 rw-p 00000000 00:00 0 
+2bab500fa000-2bab54000000 ---p 00000000 00:00 0 
+2bab54000000-2bab540ea000 rw-p 00000000 00:00 0 
+2bab540ea000-2bab58000000 ---p 00000000 00:00 0 
+2bab58000000-2bab580ed000 rw-p 00000000 00:00 0 
+2bab580ed000-2bab5c000000 ---p 00000000 00:00 0 
+2bab5c000000-2bab5c0e8000 rw-p 00000000 00:00 0 
+2bab5c0e8000-2bab60000000 ---p 00000000 00:00 0 
+2bab60000000-2bab600ed000 rw-p 00000000 00:00 0 
+2bab600ed000-2bab64000000 ---p 00000000 00:00 0 
+2bab64000000-2bab640f5000 rw-p 00000000 00:00 0 
+2bab640f5000-2bab68000000 ---p 00000000 00:00 0 
+2bab68000000-2bab680f8000 rw-p 00000000 00:00 0 
+2bab680f8000-2bab6c000000 ---p 00000000 00:00 0 
+2bab6c000000-2bab6c0eb000 rw-p 00000000 00:00 0 
+2bab6c0eb000-2bab70000000 ---p 00000000 00:00 0 
+2bab70000000-2bab700f5000 rw-p 00000000 00:00 0 
+2bab700f5000-2bab74000000 ---p 00000000 00:00 0 
+2bab74000000-2bab740ed000 rw-p 00000000 00:00 0 
+2bab740ed000-2bab78000000 ---p 00000000 00:00 0 
+2bab78000000-2bab780f3000 rw-p 00000000 00:00 0 
+2bab780f3000-2bab7c000000 ---p 00000000 00:00 0 
+2bab7c000000-2bab7c0fb000 rw-p 00000000 00:00 0 
+2bab7c0fb000-2bab80000000 ---p 00000000 00:00 0 
+2bab80000000-2bab800f9000 rw-p 00000000 00:00 0 
+2bab800f9000-2bab84000000 ---p 00000000 00:00 0 
+2bab84000000-2bab840fe000 rw-p 00000000 00:00 0 
+2bab840fe000-2bab88000000 ---p 00000000 00:00 0 
+2bab88000000-2bab880f7000 rw-p 00000000 00:00 0 
+2bab880f7000-2bab8c000000 ---p 00000000 00:00 0 
+2bab8c000000-2bab8c0e6000 rw-p 00000000 00:00 0 
+2bab8c0e6000-2bab90000000 ---p 00000000 00:00 0 
+2bab90000000-2bab900f3000 rw-p 00000000 00:00 0 
+2bab900f3000-2bab94000000 ---p 00000000 00:00 0 
+2bab94000000-2bab940e8000 rw-p 00000000 00:00 0 
+2bab940e8000-2bab98000000 ---p 00000000 00:00 0 
+2bab98000000-2bab980f8000 rw-p 00000000 00:00 0 
+2bab980f8000-2bab9c000000 ---p 00000000 00:00 0 
+2bab9c000000-2bab9c0f2000 rw-p 00000000 00:00 0 
+2bab9c0f2000-2baba0000000 ---p 00000000 00:00 0 
+2baba0000000-2baba00f1000 rw-p 00000000 00:00 0 
+2baba00f1000-2baba4000000 ---p 00000000 00:00 0 
+2baba4000000-2baba40f1000 rw-p 00000000 00:00 0 
+2baba40f1000-2baba8000000 ---p 00000000 00:00 0 
+2baba8000000-2baba80f5000 rw-p 00000000 00:00 0 
+2baba80f5000-2babac000000 ---p 00000000 00:00 0 
+2babac000000-2babac0ee000 rw-p 00000000 00:00 0 
+2babac0ee000-2babb0000000 ---p 00000000 00:00 0 
+2babb0000000-2babb00f6000 rw-p 00000000 00:00 0 
+2babb00f6000-2babb4000000 ---p 00000000 00:00 0 
+2babb4000000-2babb40ea000 rw-p 00000000 00:00 0 
+2babb40ea000-2babb8000000 ---p 00000000 00:00 0 
+2babb8000000-2babb80ed000 rw-p 00000000 00:00 0 
+2babb80ed000-2babbc000000 ---p 00000000 00:00 0 
+2babbc000000-2babbc0f7000 rw-p 00000000 00:00 0 
+2babbc0f7000-2babc0000000 ---p 00000000 00:00 0 
+2babc0000000-2babc00f9000 rw-p 00000000 00:00 0 
+2babc00f9000-2babc4000000 ---p 00000000 00:00 0 
+2babc4000000-2babc40f1000 rw-p 00000000 00:00 0 
+2babc40f1000-2babc8000000 ---p 00000000 00:00 0 
+2babc8000000-2babc80f7000 rw-p 00000000 00:00 0 
+2babc80f7000-2babcc000000 ---p 00000000 00:00 0 
+2babcc000000-2babcc0fa000 rw-p 00000000 00:00 0 
+2babcc0fa000-2babd0000000 ---p 00000000 00:00 0 
+2babd0000000-2babd00ed000 rw-p 00000000 00:00 0 
+2babd00ed000-2babd4000000 ---p 00000000 00:00 0 
+2babd4000000-2babd40f4000 rw-p 00000000 00:00 0 
+2babd40f4000-2babd8000000 ---p 00000000 00:00 0 
+2babd8000000-2babd80f2000 rw-p 00000000 00:00 0 
+2babd80f2000-2babdc000000 ---p 00000000 00:00 0 
+2babdc000000-2babdc0ee000 rw-p 00000000 00:00 0 
+2babdc0ee000-2babe0000000 ---p 00000000 00:00 0 
+7ffc1a7f7000-7ffc1a81b000 rw-p 00000000 00:00 0                          [stack]
+7ffc1a93d000-7ffc1a93f000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+******************************************************************************************************
+                                                                                    1180-4:35:43
+*****************************************************************************************************
+
+
+Command terminated by signal 6
+	Command being timed: "./lgo space1V 100 1 6 0.1 1.0 24"
+	User time (seconds): 1273.56
+	System time (seconds): 6.07
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 21:24.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1555592
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2750541
+	Voluntary context switches: 550762
+	Involuntary context switches: 280549
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 3766296
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

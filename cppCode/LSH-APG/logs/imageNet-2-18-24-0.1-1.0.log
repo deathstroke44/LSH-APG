@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for imageNet ...
+c=        1.5
+k=        20
+L=        2
+K=        18
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/imageNet/
+N=    2340373
+dim=  150
+
+LOADING TIME: 10.6372s.
+
+LOADING BENMARK...
+LOADING TIME: 0.003669s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000114s.
+
+COMPUTING HASH...
+COMPUTING TIME: 2.45678s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    0.921343
+Increase  3.07114times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 2634.54s.
+
+SAVING GRAPH...
+SAVING TIME: 2.39929s.
+
+dist=0.203289, cnt=33.120640, unique=1, std=9.403648, Recall=0.467669
+cc=1452.867920, pruning=0.282140
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for imageNet is as follow: k=20, probQ = 0.9, L = 2, K = 18, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     1.97945        0.94     3281.72     674.386     3956.11    0.383122
+
+
+******************************************************************************************************
+                                                                                    1180-10:33:59
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo imageNet 20 2 18 0.1 1.0 24"
+	User time (seconds): 2615.67
+	System time (seconds): 23.81
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 44:12.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4590480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 17528607
+	Voluntary context switches: 1980892
+	Involuntary context switches: 569704
+	Swaps: 0
+	File system inputs: 2764480
+	File system outputs: 2057344
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

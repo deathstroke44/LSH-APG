@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for notre ...
+c=        1.5
+k=        20
+L=        1
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/notre/
+N=    332668
+dim=  128
+
+LOADING TIME: 0.282784s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000513s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 2.7e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.047413s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    4.01743
+Increase  13.3914times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 204.964s.
+
+SAVING GRAPH...
+SAVING TIME: 0.310327s.
+
+dist=236.232101, cnt=36.301716, unique=1, std=9.350913, Recall=0.669254
+cc=947.013916, pruning=0.239577
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for notre is as follow: k=20, probQ = 0.9, L = 1, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.68965       0.985     1993.16     141.535      2134.7    0.310662
+
+
+******************************************************************************************************
+                                                                                    1180-4:7:23
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo notre 20 1 6 0.1 1.0 24"
+	User time (seconds): 204.18
+	System time (seconds): 1.09
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:25.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 593648
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 399498
+	Voluntary context switches: 97301
+	Involuntary context switches: 48530
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 223360
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

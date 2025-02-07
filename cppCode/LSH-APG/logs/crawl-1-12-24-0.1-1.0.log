@@ -1,0 +1,33 @@
+C++17!
+Using LSH-Graph for crawl ...
+c=        1.5
+k=        100
+L=        1
+K=        12
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Command terminated by signal 9
+	Command being timed: "./lgo crawl 100 1 12 0.1 1.0 24"
+	User time (seconds): 1.93
+	System time (seconds): 4.68
+	Percent of CPU this job got: 21%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4666340
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1712131
+	Voluntary context switches: 1452
+	Involuntary context switches: 66329
+	Swaps: 0
+	File system inputs: 4703120
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

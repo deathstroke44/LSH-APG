@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for audio ...
+c=        1.5
+k=        20
+L=        2
+K=        12
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/audio/
+N=    53387
+dim=  192
+
+LOADING TIME: 0.062863s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000474s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 9.6e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.031609s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    36238.4
+Increase  120795times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 21.8034s.
+
+SAVING GRAPH...
+SAVING TIME: 0.066986s.
+
+dist=65295.878906, cnt=36.156105, unique=1, std=9.399362, Recall=0.606604
+cc=647.167419, pruning=0.380395
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for audio is as follow: k=20, probQ = 0.9, L = 2, K = 12, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.45257      0.9945     1412.82     179.139     1591.96    0.430826
+
+
+******************************************************************************************************
+                                                                                    1180-4:4:34
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo audio 20 2 12 0.1 1.0 24"
+	User time (seconds): 21.78
+	System time (seconds): 0.20
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 137464
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45690
+	Voluntary context switches: 19586
+	Involuntary context switches: 4665
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 44544
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

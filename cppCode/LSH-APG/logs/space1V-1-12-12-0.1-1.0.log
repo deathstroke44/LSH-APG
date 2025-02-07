@@ -1,0 +1,80 @@
+C++17!
+Using LSH-Graph for space1V ...
+c=        1.5
+k=        100
+L=        1
+K=        12
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/space1V/
+N=    1000000
+dim=  100
+
+LOADING TIME: 0.665065s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000502s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 3.7e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.336151s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    398.618
+Increase  1328.73times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 686.713s.
+
+SAVING GRAPH...
+SAVING TIME: 0.715833s.
+
+dist=1134.549683, cnt=17.296543, unique=1, std=4.784715, Recall=0.000000
+cc=1195.417114, pruning=0.121895
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for space1V is as follow: k=100, probQ = 0.9, L = 1, K = 12, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     0.90839      0.5082     2590.44     401.921     2992.36     0.20278
+
+Command terminated by signal 11
+	Command being timed: "./lgo space1V 100 1 12 0.1 1.0 12"
+	User time (seconds): 683.82
+	System time (seconds): 4.24
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:31.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1529216
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1611905
+	Voluntary context switches: 394513
+	Involuntary context switches: 159913
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2660640
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

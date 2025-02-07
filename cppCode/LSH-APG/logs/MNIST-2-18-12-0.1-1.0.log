@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for MNIST ...
+c=        1.5
+k=        20
+L=        2
+K=        18
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/MNIST/
+N=    69000
+dim=  784
+
+LOADING TIME: 0.28376s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000488s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000531s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.225129s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    10.4461
+Increase  34.8203times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 30.8223s.
+
+SAVING GRAPH...
+SAVING TIME: 0.081424s.
+
+dist=5.047217, cnt=18.631783, unique=1, std=4.674232, Recall=0.717215
+cc=425.531464, pruning=0.194735
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for MNIST is as follow: k=20, probQ = 0.9, L = 2, K = 18, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     0.78953       0.997     1098.79     68.9003     1167.69     0.23322
+
+
+******************************************************************************************************
+                                                                                    1180-4:8:55
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo MNIST 20 2 18 0.1 1.0 12"
+	User time (seconds): 31.05
+	System time (seconds): 0.47
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:31.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 444832
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 185533
+	Voluntary context switches: 34590
+	Involuntary context switches: 7174
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 45320
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

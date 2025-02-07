@@ -1,0 +1,89 @@
+C++17!
+Using LSH-Graph for word2vec ...
+c=        1.5
+k=        100
+L=        1
+K=        6
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/word2vec/
+N=    1000000
+dim=  300
+
+LOADING TIME: 22.5603s.
+
+MAKING BENMARK...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+MAKING TIME: 83.3658s.
+
+SAVING BENMARK...
+SAVING TIME: 0.003132s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 4.7e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.517332s.
+
+[31mOld W=    0.3
+New W=    0.3
+Increase  1times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 611.328s.
+
+SAVING GRAPH...
+SAVING TIME: 0.638095s.
+
+dist=2.180573, cnt=15.206789, unique=1, std=4.494086, Recall=0.000000
+cc=858.892578, pruning=0.118984
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for word2vec is as follow: k=100, probQ = 0.9, L = 1, K = 6, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     1.08776       0.621     1985.19     50.6009     2035.79    0.109798
+
+
+******************************************************************************************************
+                                                                                    1180-4:13:26
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo word2vec 100 1 6 0.1 1.0 12"
+	User time (seconds): 690.07
+	System time (seconds): 8.43
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:59.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3239028
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 6585048
+	Voluntary context switches: 410098
+	Involuntary context switches: 156744
+	Swaps: 0
+	File system inputs: 2357104
+	File system outputs: 342240
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,80 @@
+C++17!
+Using LSH-Graph for sald1m ...
+c=        1.5
+k=        100
+L=        2
+K=        18
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/sald1m/
+N=    1000000
+dim=  128
+
+LOADING TIME: 0.84384s.
+
+LOADING BENMARK...
+LOADING TIME: 0.0005s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000108s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.993787s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    16.4137
+Increase  54.7122times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 395.7s.
+
+SAVING GRAPH...
+SAVING TIME: 1.10331s.
+
+dist=12.502395, cnt=17.954439, unique=1, std=4.994179, Recall=0.000000
+cc=493.521393, pruning=0.200784
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for sald1m is as follow: k=100, probQ = 0.9, L = 2, K = 18, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     0.91865      0.8563     1184.89     241.777     1426.67    0.190262
+
+Command terminated by signal 11
+	Command being timed: "./lgo sald1m 100 2 18 0.1 1.0 12"
+	User time (seconds): 393.97
+	System time (seconds): 5.64
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:42.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1809476
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2366479
+	Voluntary context switches: 547207
+	Involuntary context switches: 97059
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 3224704
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

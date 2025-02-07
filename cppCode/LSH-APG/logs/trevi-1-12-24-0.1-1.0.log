@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for trevi ...
+c=        1.5
+k=        20
+L=        1
+K=        12
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/trevi/
+N=    99900
+dim=  4096
+
+LOADING TIME: 5.1605s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000605s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000934s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.602936s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    1391.23
+Increase  4637.44times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 184.076s.
+
+SAVING GRAPH...
+SAVING TIME: 0.078915s.
+
+dist=2029.342285, cnt=31.424364, unique=1, std=9.005353, Recall=0.498836
+cc=874.999390, pruning=0.261219
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for trevi is as follow: k=20, probQ = 0.9, L = 1, K = 12, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     3.49536       0.977     1957.34     20.8818     1978.22    0.354364
+
+
+******************************************************************************************************
+                                                                                    1180-4:14:2
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo trevi 20 1 12 0.1 1.0 24"
+	User time (seconds): 184.04
+	System time (seconds): 3.28
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:10.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3229000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2441985
+	Voluntary context switches: 69013
+	Involuntary context switches: 36261
+	Swaps: 0
+	File system inputs: 378040
+	File system outputs: 64728
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

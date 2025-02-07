@@ -1,0 +1,77 @@
+C++17!
+Using LSH-Graph for lendb ...
+c=        1.5
+k=        100
+L=        1
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/lendb/
+N=    1000000
+dim=  256
+
+LOADING TIME: 3.49053s.
+
+LOADING BENMARK...
+LOADING TIME: 0.037851s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 4e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.283302s.
+
+[31mOld W=    0.3
+New W=    0.3
+Increase  1times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 1070.18s.
+
+SAVING GRAPH...
+SAVING TIME: 0.838731s.
+
+dist=0.000077, cnt=34.360058, unique=1, std=9.663488, Recall=0.000347
+cc=1342.958496, pruning=0.214291
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for lendb is as follow: k=100, probQ = 0.9, L = 1, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     1.09155      0.9763     2130.16     111.547     2241.71    0.526984
+
+Command terminated by signal 11
+	Command being timed: "./lgo lendb 100 1 6 0.1 1.0 24"
+	User time (seconds): 1064.35
+	System time (seconds): 7.69
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:57.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2324084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4056563
+	Voluntary context switches: 353356
+	Involuntary context switches: 257835
+	Swaps: 0
+	File system inputs: 555376
+	File system outputs: 3253440
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,80 @@
+C++17!
+Using LSH-Graph for ethz ...
+c=        1.5
+k=        100
+L=        2
+K=        18
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/ethz/
+N=    36643
+dim=  256
+
+LOADING TIME: 0.057209s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000496s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000186s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.044213s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    2.96843e+07
+Increase  9.89475e+07times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 7.91353s.
+
+SAVING GRAPH...
+SAVING TIME: 0.041289s.
+
+dist=1194.182617, cnt=16.931856, unique=1, std=4.998082, Recall=0.003510
+cc=327.890320, pruning=0.183247
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for ethz is as follow: k=100, probQ = 0.9, L = 2, K = 18, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     0.29811      0.9506      837.47     109.732     947.202    0.201368
+
+Command terminated by signal 11
+	Command being timed: "./lgo ethz 100 2 18 0.1 1.0 12"
+	User time (seconds): 7.99
+	System time (seconds): 0.16
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 91528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42610
+	Voluntary context switches: 8095
+	Involuntary context switches: 1385
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 127376
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

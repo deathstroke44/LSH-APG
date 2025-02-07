@@ -1,0 +1,85 @@
+C++17!
+Using LSH-Graph for uqv ...
+c=        1.5
+k=        100
+L=        2
+K=        18
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/uqv/
+N=    1000000
+dim=  256
+
+LOADING TIME: 1.39519s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000497s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 0.000185s.
+
+COMPUTING HASH...
+COMPUTING TIME: 1.4033s.
+
+[1m[31mWARNING:
+[31mRanges of hash values is too LARGE. 
+Please increase W at least 1times.
+[0m[31mOld W=    0.3
+New W=    2.837
+Increase  9.45668times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 686.741s.
+
+SAVING GRAPH...
+SAVING TIME: 1.26289s.
+
+dist=0.016741, cnt=36.623009, unique=1, std=9.405004, Recall=0.000000
+cc=620.430725, pruning=0.695732
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for uqv is as follow: k=100, probQ = 0.9, L = 2, K = 18, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     0.55917      0.9494     1158.29     227.583     1385.87    0.574899
+
+
+******************************************************************************************************
+                                                                                    1180-5:54:31
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo uqv 100 2 18 0.1 1.0 24"
+	User time (seconds): 681.72
+	System time (seconds): 8.46
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:32.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2397364
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 7397888
+	Voluntary context switches: 579756
+	Involuntary context switches: 157055
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 934072
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

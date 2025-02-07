@@ -1,0 +1,89 @@
+C++17!
+Using LSH-Graph for netflix ...
+c=        1.5
+k=        100
+L=        1
+K=        6
+T=        12
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/netflix/
+N=    17770
+dim=  300
+
+LOADING TIME: 0.75433s.
+
+MAKING BENMARK...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+MAKING TIME: 1.26997s.
+
+SAVING BENMARK...
+SAVING TIME: 0.012767s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 4.6e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.008584s.
+
+[31mOld W=    0.3
+New W=    0.3
+Increase  1times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 3.81769s.
+
+SAVING GRAPH...
+SAVING TIME: 0.023937s.
+
+dist=0.412414, cnt=18.446989, unique=1, std=4.761509, Recall=0.001643
+cc=403.027222, pruning=0.147105
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for netflix is as follow: k=100, probQ = 0.9, L = 1, K = 6, T = 12
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG     100     200     0.26772      0.9953      996.47     29.5559     1026.03    0.153953
+
+
+******************************************************************************************************
+                                                                                    1180-4:1:33
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo netflix 100 1 6 0.1 1.0 12"
+	User time (seconds): 5.11
+	System time (seconds): 0.12
+	Percent of CPU this job got: 87%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 69496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 28578
+	Voluntary context switches: 4065
+	Involuntary context switches: 1033
+	Swaps: 0
+	File system inputs: 46648
+	File system outputs: 7664
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

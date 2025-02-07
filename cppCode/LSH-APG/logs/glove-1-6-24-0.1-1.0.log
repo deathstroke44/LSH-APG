@@ -1,0 +1,82 @@
+C++17!
+Using LSH-Graph for glove ...
+c=        1.5
+k=        20
+L=        1
+K=        6
+T=        24
+lsh_UB=   0
+LOADING DATA...
+Load from new file: /users/PAS2671/kabir36/kabir/similarity-search/dataset/glove/
+N=    1192514
+dim=  100
+
+LOADING TIME: 0.808607s.
+
+LOADING BENMARK...
+LOADING TIME: 0.000495s.
+
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+START HASHING...
+
+SETTING HASH PARAMETER...
+SETTING TIME: 2.5e-05s.
+
+COMPUTING HASH...
+COMPUTING TIME: 0.207846s.
+
+[31mOld W=    0.3
+New W=    0.3
+Increase  1times.
+[0mCONSTRUCTING GRAPH...
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+CONSTRUCTING TIME: 1197.29s.
+
+SAVING GRAPH...
+SAVING TIME: 1.04201s.
+
+dist=4.826315, cnt=29.534737, unique=1, std=8.489247, Recall=0.368997
+cc=1612.124634, pruning=0.135973
+
+Loading FastGraph...
+*******************************************************************************************************
+The result of LSH-G for glove is as follow: k=20, probQ = 0.9, L = 1, K = 6, T = 24
+******************************************************************************************************
+     algName       k      ef        Time      Recall        Cost        CPQ1        CPQ2     Pruning
+
+       fastG      20     200     1.62602      0.7495     3656.42     279.254     3935.67    0.197138
+
+
+******************************************************************************************************
+                                                                                    1180-4:34:3
+*****************************************************************************************************
+
+
+	Command being timed: "./lgo glove 20 1 6 0.1 1.0 24"
+	User time (seconds): 1191.37
+	System time (seconds): 5.65
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1846180
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2061502
+	Voluntary context switches: 591403
+	Involuntary context switches: 241265
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 674224
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
